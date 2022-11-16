@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from "react"
 import SectionHead from "./SectionHead"
 import { ImQuotesLeft } from 'react-icons/im'

@@ -1,7 +1,8 @@
-
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const Header = ({title, image, children}) => {
-    console.log(children)
+    console.log('children', children)
   return (
     <header className="header">
         <div className="header__container">
@@ -15,6 +16,12 @@ const Header = ({title, image, children}) => {
         </div>
     </header>
   ) 
+}
+
+Header.propTypes = {
+    title: PropTypes.array.isRequired,
+    image: PropTypes.number.isRequired,
+    children: PropTypes.string.isRequired
 }
 
 export default Header

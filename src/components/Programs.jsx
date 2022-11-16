@@ -1,3 +1,4 @@
+import React from 'react'
 import { FaCrown } from 'react-icons/fa'
 import SectionHead from './SectionHead'
 import { programs } from '../data'

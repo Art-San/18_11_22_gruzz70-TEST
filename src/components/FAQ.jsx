@@ -1,6 +1,8 @@
+import React from 'react'
 import { useState } from 'react'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { AiOutlineMinus } from 'react-icons/ai'
+import PropTypes from 'prop-types'
 
 const FAQ = ({question, answer}) => {
   const [isAnswerShowing, setIsAnswerShowing] = useState(false)
@@ -18,6 +20,11 @@ const FAQ = ({question, answer}) => {
         {isAnswerShowing && <p>{answer}</p>}
     </article>
   )
+}
+
+FAQ.propTypes = {
+  question: PropTypes.string.isRequired,
+  answer: PropTypes.string.isRequired
 }
 
 export default FAQ

@@ -1,4 +1,4 @@
-
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../images/logo.png'
 import { FaLinkedin } from 'react-icons/fa'
@@ -7,7 +7,6 @@ import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiFillInstagram } from 'react-icons/ai'
 
 /* 2-53-44 закончил видео смотреть  */
-
 
 const Footer = () => {
   return (
