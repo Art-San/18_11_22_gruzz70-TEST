@@ -7,15 +7,15 @@ import Values from '../../components/Values'
 import './home.css'
 
 const Home = () => {
-  return (
-    <>
-    <MainHeader/>
-    <Programs/>
-    <Values/>
-    <FAQs/>
-    <Testimonials/>
-    </>
-  )
+    return (
+        <>
+            <MainHeader />
+            <Programs />
+            <Values />
+            <FAQs />
+            <Testimonials />
+        </>
+    )
 }
 
 export default Home

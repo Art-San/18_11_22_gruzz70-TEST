@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     border: 0;
@@ -45,7 +47,11 @@ body {
     margin-inline: auto;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     line-height: 1.2;
     color: var(--color-gray-100);
 }
@@ -67,14 +73,6 @@ img {
     object-fit: cover;
     width: 100%;
 }
-
-
-
-
-
-
-
-
 
 .btn {
     color: var(--color-gray-100);
@@ -106,15 +104,6 @@ img {
     background: var(--color-gray-100);
 }
 
-
-
-
-
-
-
-
-
-
 section {
     margin-top: 10rem;
 }
@@ -132,15 +121,6 @@ section {
     color: var(--color-secondary);
     font-size: 1.5rem;
 }
-
-
-
-
-
-
-
-
-
 
 .card {
     background: var(--color-gray-500);
@@ -183,14 +163,6 @@ section {
     font-weight: 300;
 }
 
-
-
-
-
-
-
-
-
 .header {
     margin-top: 5rem;
     height: 20rem;
@@ -230,16 +202,13 @@ section {
 
 .header__content p {
     color: rgba(255, 255, 255, 0.7);
-    
 }
-
-
 
 /* 3-02-22 медиа запросы  */
 /* MEDIA QUERIES (medium screens*/
 @media screen and (max-width: 1024px) {
     .container {
-       width: var(--container-width-md);
+        width: var(--container-width-md);
     }
 
     h1 {
@@ -254,10 +223,6 @@ section {
         width: 76%;
     }
 }
-
-
-
-
 
 /* MEDIA QUERIES (small screens*/
 @media screen and (max-width: 600px) {

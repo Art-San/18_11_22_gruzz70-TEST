@@ -12,12 +12,6 @@
     border-color: var(--color-gray-500);
 }
 
-
-
-
-
-
-
 /* MEDIA QUERIES (medium screens*/
 @media screen and (max-width: 1024px) {
     .gallery__container {
@@ -30,10 +24,10 @@
     }
 }
 
- /* MEDIA QUERIES (small screens*/
- @media screen and (max-width: 600px) {
+/* MEDIA QUERIES (small screens*/
+@media screen and (max-width: 600px) {
     .gallery__container {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
- }
+}
