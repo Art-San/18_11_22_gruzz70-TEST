@@ -15,13 +15,13 @@ const App = () => {
         <div>
             <Navbar />
             <Switch>
-                <Route path="/" exact component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/gallery" component={Gallery} />
                 <Route path="/plans" component={Plans} />
                 <Route path="/trainers" component={Trainers} />
                 <Route path="/404" component={NotFound} />
+                <Route path="/" end component={Home} />
                 <Redirect to="/404" />
             </Switch>
             <Footer />

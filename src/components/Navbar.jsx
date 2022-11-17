@@ -8,8 +8,7 @@ import './navbar.css'
 
 const Navbar = () => {
     const [isNavShowing, setIsNavShowing] = useState(false)
-
-    // "container nav__container"
+    console.log('isNavShowing', isNavShowing)
     return (
         <nav>
             <div className="container nav__container">
@@ -30,9 +29,11 @@ const Navbar = () => {
                             <li key={index}>
                                 <NavLink
                                     to={path}
-                                    end
+                                    // end
                                     className={({ isActive }) =>
-                                        isActive ? 'active-nav' : ''
+                                        // console.log('isActive', isActive)
+                                        isActive ? '' : 'active-nav'
+                                        // isActive ? 'active-nav' : ''
                                     }
                                     onClick={() =>
                                         setIsNavShowing((prev) => !prev)

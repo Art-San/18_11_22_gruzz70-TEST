@@ -3,6 +3,7 @@ import Card from '../UI/Card'
 import PropTypes from 'prop-types'
 
 const Trainer = ({ image, name, job, socials }) => {
+    // console.log('socials', socials)
     return (
         <Card className="trainer">
             <div className="trainer__img">
@@ -32,7 +33,7 @@ Trainer.propTypes = {
     image: PropTypes.string,
     name: PropTypes.string.isRequired,
     job: PropTypes.string.isRequired,
-    socials: PropTypes.array.isRequiredS
+    socials: PropTypes.oneOfType([PropTypes.object, PropTypes.array])
 }
 
 export default Trainer

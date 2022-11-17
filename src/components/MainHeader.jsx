@@ -16,7 +16,7 @@ const MainHeader = () => {
                     >
                         Смотри сдесь
                     </a>
-                    <h1>Join The Legends Of The Fitness World</h1>
+                    <h1>Услуги грузотакси в Томске</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Numquam qui deleniti reiciendis magni libero corrupti?
