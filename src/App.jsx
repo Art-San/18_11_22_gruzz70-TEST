@@ -9,6 +9,7 @@ import Trainers from './pages/trainers/Trainers'
 import NotFound from './pages/notFound/NotFound'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Registration from './pages/registration/Registration'
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
                 <Route path="/plans" component={Plans} />
                 <Route path="/trainers" component={Trainers} />
                 <Route path="/404" component={NotFound} />
+                <Route path="/registration" component={Registration}/>
                 <Redirect to="/404" />
             </Switch>
             <Footer />

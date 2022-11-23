@@ -1,0 +1,12 @@
+.registration__container {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.registration__container .btn {
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+/* container registration__container */

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SectionHead from './SectionHead'
 import { ImQuotesLeft } from 'react-icons/im'
-import Card from '../UI/Card'
+import Card from '../utils/Card'
 import {
     IoIosArrowDropleftCircle,
     IoIosArrowDroprightCircle

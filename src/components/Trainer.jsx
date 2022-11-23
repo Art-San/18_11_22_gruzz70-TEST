@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../UI/Card'
+import Card from '../utils/Card'
 import PropTypes from 'prop-types'
 
 const Trainer = ({ image, name, job, socials }) => {

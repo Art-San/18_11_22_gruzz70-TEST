@@ -4,11 +4,12 @@ import Logo from '../images/logo.png'
 import { links } from '../data'
 import { GoThreeBars } from 'react-icons/go'
 import { MdOutlineClose } from 'react-icons/md'
+import { GiEntryDoor } from 'react-icons/gi'
 import './navbar.css'
 
 const Navbar = () => {
     const [isNavShowing, setIsNavShowing] = useState(false)
-    console.log('isNavShowing', isNavShowing)
+    // console.log('isNavShowing', isNavShowing)
     return (
         <nav>
             <div className="container nav__container">
@@ -45,6 +46,12 @@ const Navbar = () => {
                         )
                     })}
                 </ul>
+                <div>
+                    <Link to='/registration' className='registration'>
+                        <button className="nav__entry-btn"><GiEntryDoor/></button>
+                    </Link>
+                    <p>Вход</p>
+                </div>
                 <button
                     className="nav__toggle-btn"
                     onClick={() => setIsNavShowing((prev) => !prev)}

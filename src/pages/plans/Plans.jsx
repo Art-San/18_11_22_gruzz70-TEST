@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header'
 import HeaderImage from '../../images/header_bg_4.jpg'
-import Card from '../../UI/Card'
+import Card from '../../utils/Card'
 import { plans } from '../../data'
 import './plans.css'
 /* 3-56-00 закончил видео смотреть  */

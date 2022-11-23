@@ -3,7 +3,7 @@ import Image from '../images/values.jpg'
 import SectionHead from './SectionHead'
 import { GiCutDiamond } from 'react-icons/gi'
 import { values } from '../data'
-import Card from '../UI/Card'
+import Card from '../utils/Card'
 
 const Values = () => {
     return (
