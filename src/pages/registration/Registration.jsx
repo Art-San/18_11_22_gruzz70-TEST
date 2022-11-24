@@ -9,10 +9,13 @@ const registration = () => {
     const [values, setValues] = useState({
         email: '',
         link: '',
-        description: ''
+        description: '',
+        password: ''
     })
     const [errors, setErrors] = useState({})
-    console.log('errors', errors)
+    // console.log('errors', errors)
+
+    const isValid = Object.keys(errors).length === 0
 
     useEffect(() => {
         const errors = validate(values, validationSchema)
@@ -21,6 +24,10 @@ const registration = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        if (isValid) {
+            // отправляем только если валидно
+            console.log('Отправлено!')
+        }
     }
     const handleChange = (e) => {
         const { value, name } = e.target
@@ -29,48 +36,69 @@ const registration = () => {
             [name]: value
         }))
     }
-    const { email, link, description } = values
+    const { email, link, description, password } = values
 
     return (
         <section>
             <div className="container registration__container">
-                <h2>Отчёт об ошибке</h2>
-                {/* <div>
-                    <pre>{JSON.stringify(errors, null, 2)}</pre>
-                </div> */}
+                <div className="row">
+                    <div className="col-md-6 offset-md-3 shadow p-4">
+                        <h2>Отчёт об ошибке</h2>
+                        {/* <div>
+                            <pre>{JSON.stringify(errors, null, 2)}</pre>
+                        </div> */}
 
-                <form onSubmit={handleSubmit}>
-                    <TextField
-                        id='email'
-                        name='email'
-                        label='Email'
-                        placeholder='asava@sibmail.com'
-                        value={email}
-                        onChange={handleChange}
-                        error={errors.email}
-                    />
+                        <form onSubmit={handleSubmit}>
+                            <TextField
+                                id='email'
+                                name='email'
+                                label='Email'
+                                placeholder='asava@sibmail.com'
+                                value={email}
+                                onChange={handleChange}
+                                error={errors.email}
+                            />
 
-                    <TextField
-                        id='link'
-                        name='link'
-                        label='Ссылка на страницу с ошибкой'
-                        placeholder='https://www.google.com/'
-                        value={link}
-                        onChange={handleChange}
-                        error={errors.link}
-                    />
+                            <TextField
+                                id='link'
+                                name='link'
+                                label='Ссылка на страницу с ошибкой'
+                                placeholder='https://www.google.com/'
+                                value={link}
+                                onChange={handleChange}
+                                error={errors.link}
+                            />
 
-                    <TextField
-                        id='description'
-                        name='description'
-                        label='Описание'
-                        placeholder='Неработае кнопка'
-                        value={description}
-                        onChange={handleChange}
-                        error={errors.description}
-                    />
-                    <button className='btn sm' type="submit">Отправить</button>
-                </form>
+                            <TextField
+                                id='description'
+                                name='description'
+                                label='Описание'
+                                placeholder='Неработае кнопка'
+                                value={description}
+                                onChange={handleChange}
+                                error={errors.description}
+                            />
+
+                            <TextField
+                                id="password"
+                                name="password"
+                                label="Пароль"
+                                value={password}
+                                onChange={handleChange}
+                                error={errors.password}
+                                type="password"
+                            />
+
+                            <button
+                                className="btn sm"
+                                disabled={!isValid}
+                                type="submit"
+                            >
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     )

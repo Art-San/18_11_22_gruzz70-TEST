@@ -7,6 +7,6 @@ const Card = ({ className, children }) => {
 
 Card.propTypes = {
     className: PropTypes.string,
-    children: PropTypes.string
+    children: PropTypes.array
 }
 export default Card
